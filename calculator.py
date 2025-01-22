@@ -4,6 +4,9 @@ class Calculator:
         if len(numbers) == 0:
             return 0
 
+        if numbers.endswith('\n'):
+            return "invalid"
+
         sum = 0
         for item in numbers:
             if item.isdigit():
